@@ -1,0 +1,67 @@
+<div class="container text-dark" id="carrito">
+	<div class="alert alert-primary">
+		<h2>Carrito de compras</h2>
+	</div>
+	<div class="container">
+		<div class="alert alert-light">
+			<ul class="list-group">
+				<li class="row" *ngFor="let caritem of carItems">
+
+						<div class="col-4">
+							<img src="/assets/{{caritem.item.img}}">
+						</div>
+						<div class="col-4">
+							<h3>{{caritem.item.nombre}}</h3>
+							<h5>Precio: {{caritem.item.precio}}</h5>
+							<h5>Unidades: {{caritem.cantidad}}</h5>
+						</div>
+						<div class="col-4">
+							<h4>Subtotal: ${{caritem.item.precio*caritem.cantidad}}</h4>
+							<hr>
+							<br>
+						</div>
+				</li>
+			</ul>
+		</div>
+		<div class="alert alert-warning row" >
+			<div>
+				<a class="btn btn-primary" [routerLink]="['/principal/productos']">Cancelar</a>
+				<a class="btn btn-success text-white" (click)="pagar();">Pagar</a>
+			</div>
+			<div>
+				<h2 class="titulo">Total: ${{total}}</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 
+<div class="container text-dark">
+<h2 class="alert alert-primary mt-5" role="alert">Lista de compras</h2>
+<ul class="list-unstyled mt-2 bg-light">
+  <li class="media">
+    <img src="..." class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">List-based media object</h5>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    </div>
+  </li>
+  <li class="media my-4">
+    <img src="..." class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">List-based media object</h5>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    </div>
+  </li>
+  <li class="media">
+    <img src="..." class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">List-based media object</h5>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    </div>
+  </li>
+</ul>
+ 
+</div>
+ -->

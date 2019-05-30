@@ -1,0 +1,39 @@
+
+
+<div class="card mt-5 text-dark margenes">
+  <img src="/assets/{{product.img}}" class="card-img-top img-thumbnail align-self-center" alt="...">
+  <div class="card-body">
+
+    <h3 class="card-title text-center">{{product.nombre}}</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia minus quo quidem delectus corrupti ex blanditiis labore aut neque ad repellendus error nulla quae tempora, itaque repudiandae dignissimos numquam!</p>
+
+    <p class="card-text">
+        Precio:
+        <span class="badge badge-info"> $ {{product.precio}}</span>
+    </p>
+
+    <p class="card-text">
+          Disponible :
+          <span class="badge badge-warning"> {{product.stock}}</span>
+    </p>
+
+
+    <div class="btn-toolbar justify-content-between">
+
+<!--       <div class="input-group">
+
+        <div class="input-group-prepend">
+          <a class="btn btn-success" id="btnGroupAddon2" >Añadir</a>
+        </div>
+
+        <input class="form-control" type="number" name="cantidad" value="1" min="1" max="{{product.stock}}" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+
+      </div>
+ -->
+      <a href="/principal/productos" class="btn btn-primary">CERRAR</a>
+
+    </div>
+
+  </div>
+</div>

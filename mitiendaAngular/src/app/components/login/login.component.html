@@ -1,0 +1,36 @@
+
+
+<div id="login" class="mifondo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-ms-6 col-md-4 mx-auto margenes">
+        <div class="card_login">
+          <div class="card">
+            <div class="card-body text-center">
+              <form #formLogin="ngForm" (ngSubmit)="formLogin.form.valid && onLogin()" novalidate>
+                <h1 class="h3 mb- font-weight-normal" *ngIf="!isError">Login</h1>
+                <div class="alert alert-danger" role="alert" *ngIf="isError">
+                  El usuario o password no son correctos!
+                </div>
+                <div class="form-group">
+                  <input [(ngModel)]="email" type="email" name="email" id="email" class="form-control" placeholder="Email" required pattern="^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$">
+                  <label class="error" *ngIf="formLogin.submitted && !email.valid">Debes ingresar un email válido</label>
+                </div>
+                <div class="form-group">
+                  <input [(ngModel)]="password" type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                  <label class="error" *ngIf="formLogin.submitted && !password.valid">Debes ingresar un password</label>
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
+                <div class="form-group alert alert-primary">
+                  <a routerLink="/register">Are you new ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="text-light">user: test@gmail.com   psw: test123</p>
+      </div>
+    </div>
+  </div>
+</div>
+

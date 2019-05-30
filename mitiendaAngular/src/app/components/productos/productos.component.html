@@ -1,0 +1,79 @@
+<!-- 
+<section id="products" class="mt-3">
+ -->
+  <div class="container bg-light mt-3">
+
+    <div class="row justify-content-around alert alert-light" role="alert">
+
+      <h2 class="col">
+            Catalogo de productos
+      </h2>
+
+      <input 
+        type="text" 
+        [(ngModel)]="productoFilter.nombre" 
+        class="col form-control" 
+        placeholder="Escribe el nombre del producto a buscar" 
+        aria-label="buscar" 
+        aria-describedby="basic-addon1"
+      >
+            
+    </div>
+
+    <div class="row">
+
+      <div class="card-deck col-xs-12 col-sm-6 col-md-4 mx-auto" 
+        *ngFor="let product of productos | filterBy: productoFilter">
+ 
+          <div class="card text-dark mt-3" style="width: 18rem;">
+            <img src="/assets/{{product.img}}" class="card-img-top img-thumbnail img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{product.nombre}}</h5>
+              <p class="card-text">
+                Precio:
+                <span class="badge badge-info"> $ {{product.precio}}</span>
+              </p>
+
+              <p class="card-text">
+                  Disponible :
+                  <span class="badge badge-warning"> {{product.stock}}</span>
+              </p>
+
+              <div class="btn-toolbar btn-group-sm justify-content-between">
+
+                <a 
+                  href="/principal/detail/{{product.id}}" 
+                  class="btn btn-primary btn-sm"
+                >Ver más</a>
+          
+                <div class="input-group input-group-sm">
+
+                  <div class="input-group-prepend">
+                    <a class="btn btn-success input-group-text" 
+                    (click)="agregarProducto(product);">Añadir</a>
+                  </div>
+
+                  <input 
+                    class="form-control" 
+                    type="number" 
+                    name="cantidadAdd" 
+                    [(ngModel)]="cantidadAdd" 
+                    value="1" 
+                    min="1" 
+                    max="{{product.stock}}" 
+                  >
+          
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+  </div>
+<!-- </section>
+ -->

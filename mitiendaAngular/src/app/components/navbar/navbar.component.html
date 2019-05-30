@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <a class="navbar-brand" [routerLink]="['productos']">
+      Mi Tienda
+    </a>
+  
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto align-self-end">
+
+      <li class="nav-item">
+          <a class="nav-link" [routerLink]="['productos']">
+            Productos  
+          </a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" [routerLink]="['carrito']">
+            Carrito <span class="badge badge-pill badge-primary" *ngIf="carShoping.length != 0" >{{carShoping.length}}</span>
+          </a>
+      </li>
+
+      <li class="nav-item">
+          <a  class="nav-link"  [routerLink]="['']">
+          Cerrar 
+        </a>
+      </li>
+
+<!--       <li class="nav-item">
+          <a  class="nav-link"  [routerLink]="['login']">
+          Login
+        </a>
+      </li>
+  -->
+
+    </ul>
+
+  </div>
+</nav>
+
+

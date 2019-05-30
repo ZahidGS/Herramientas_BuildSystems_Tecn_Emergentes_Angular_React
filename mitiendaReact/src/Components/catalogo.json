@@ -1,0 +1,25 @@
+{
+    "articulos": [
+        {"id": "1", "nombre": "Aguacate", "img": "aguacate.jpg", "precio": "5.00", "stock": "46"},
+        {"id": "2", "nombre": "Ajo", "img": "ajo.jpg", "precio": "2.00", "stock": "75"},
+        {"id": "3", "nombre": "Almendras", "img": "almendras.jpg", "precio": "6.00", "stock": "28"},
+        {"id": "4", "nombre": "Arándanos", "img": "arandanos.jpg", "precio": "6.00", "stock": "39"},
+        {"id": "5", "nombre": "Brócoli", "img": "brocoli.png", "precio": "3.00", "stock": "45"},
+        {"id": "6", "nombre": "Calabaza", "img": "calabaza.jpg", "precio": "6.00", "stock": "40"},
+        {"id": "7", "nombre": "Canela", "img": "canela.jpg", "precio": "2.00", "stock": "20"},
+        {"id": "8", "nombre": "Cebolla", "img": "cebolla.jpg", "precio": "4.00", "stock": "30"},
+        {"id": "9", "nombre": "Fresa", "img": "fresa.jpg", "precio": "2.00", "stock": "50"},
+        {"id": "10", "nombre": "Kiwi", "img": "kiwi.jpg", "precio": "3.00", "stock": "36"},
+        {"id": "11", "nombre": "Limón", "img": "limon.jpg", "precio": "1.50", "stock": "70"},
+        {"id": "12", "nombre": "Lychee", "img": "lychee.jpg", "precio": "5.00", "stock": "80"},
+        {"id": "13", "nombre": "Maiz", "img": "maiz.jpg", "precio": "2.50", "stock": "40"},
+        {"id": "14", "nombre": "Manzana", "img": "manzana.jpg", "precio": "3.40", "stock": "39"},
+        {"id": "15", "nombre": "Naranja", "img": "naranja.jpg", "precio": "3.00", "stock": "60"},
+        {"id": "16", "nombre": "Papa", "img": "papa.jpg", "precio": "3.50", "stock": "60"},
+        {"id": "17", "nombre": "Pasta", "img": "pasta.jpg", "precio": "2.50", "stock": "47"},
+        {"id": "18", "nombre": "Pimienta", "img": "pimienta.jpg", "precio": "3.80", "stock": "70"},
+        {"id": "19", "nombre": "Repollo", "img": "repollo.jpg", "precio": "4.50", "stock": "67"},
+        {"id": "20", "nombre": "Tomate", "img": "tomate.jpg", "precio": "2.80", "stock": "78"},
+        {"id": "21", "nombre": "Zanahoria", "img": "zanahoria.jpg", "precio": "1.80", "stock": "58"}
+    ]
+}
