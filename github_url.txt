@@ -1,0 +1,13 @@
+URL
+
+https://github.com/ZahidGS/Herramientas_BuildSystems_Tecn_Emergentes_Angular_React.git
+
+
+ANGULAR
+usr: test@gmail.com
+psw: test123
+
+
+REACT
+usr: test123@gmail.com
+psw: test123
