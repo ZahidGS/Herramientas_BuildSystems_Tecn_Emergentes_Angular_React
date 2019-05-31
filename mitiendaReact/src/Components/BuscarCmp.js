@@ -1,9 +1,9 @@
 import React from 'react';
 
+/* 
+CONSTRUYE LOS CONTROLES PARA REALIZAR LA BUSQUEDA DE ARTICULOS
+*/
 class BuscarCmp extends React.Component {
-/* 	constructor(props){
-		super(props);
-	} */
   render() {
     return (
     	<div className="input-group mb-3 col-6">

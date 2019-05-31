@@ -14,6 +14,9 @@ import Navega from './navbar';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 
+
+//COORDINA LA NAVEGACION DE LA APLICACION
+
 class Home extends Component {
 
     render() {

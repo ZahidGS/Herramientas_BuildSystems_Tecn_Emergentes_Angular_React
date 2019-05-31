@@ -27,23 +27,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-/*   onAddUser(){
-    this.authService.registerUser(this.email, this.password)
-    .then((res) => {
-      this.authService.isAuth().subscribe(user => {
-        if (user) {
-          user.updateProfile({
-            displayName: '',
-            photoURL: this.inputImageUser.nativeElement.value
-          }).then( () => { this.router.navigate(['admin/list-books']);
-          }).catch( (error) => { console.log('error presentado', error);
-          });
-        }
-      });
-    }).catch(err => console.log('err', err.message));
-  }
- */
-
+//AGREGA UN USUARIO NUEVO
 onAddUser(){
   this.authService.registerUser(this.email, this.password)
   .then((res) => {
@@ -52,7 +36,7 @@ onAddUser(){
   .catch(err => console.log('error al agregar', err.message));
 }
 
-
+//CARGA UNA IMAGEN PARA EL USUARIO
   onUpload(e){
     //console.log('subir', e.target.files[0]);
     const id = Math.random().toString(36).substring(2);

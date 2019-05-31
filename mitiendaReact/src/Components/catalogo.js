@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
 import { articulos } from '../Components/catalogo.json';
-import './catalogo.css';
+import  './catalogo.css';
 
 import BuscarCmp from './BuscarCmp';
 
-import ArticulosZgs from './ArticulosZgs'
-// console.log('articulos', articulos);
+import ArticulosZgs from './ArticulosZgs';
+
+//CARGA Y MUESTRA EL CATALOGO DE PRODUCTOS
+//INCLUYE LA BARRA DE BUSQUEDA DE ARTICULOS
+
 
 class Catalogo extends Component {
     constructor(props) {
@@ -27,8 +30,8 @@ class Catalogo extends Component {
   			return item.nombre.toLowerCase().search(e.target.value.toLowerCase()) !== -1;
   		});
   		this.setState({filtrados: articulosfiltrados});
-    }
-    
+    };
+
 
     render() {
       

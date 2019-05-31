@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  //VALIDA EL USUARIO Y CARGA LA PAGINA PRINCIPAL
   onLogin(): void {
     this.authService.loginEmailUser(this.email, this.password)
     .then((res) => {
@@ -31,9 +32,10 @@ export class LoginComponent implements OnInit {
     });
   }
 
-//usuarios user1: test@gmail.com pass1: test123
+//usuario user: test@gmail.com pass1: test123
 
 
+//CIERRA LA SESION DEL USUARIO
   onLogout(){
     this.authService.logoutUser();
   }

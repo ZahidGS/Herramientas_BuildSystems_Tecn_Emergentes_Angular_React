@@ -1,4 +1,5 @@
-//alamcena el item actual
+//alamacena el item actual
+// que se buscará para mostrar el producto
 
 export const type = 'findCurrentItem';
 

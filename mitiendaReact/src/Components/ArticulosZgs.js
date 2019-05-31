@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 
 /* 
-function onChange = e => {
-  this.setState({cant: e.target.value});
-};
+CARGA LOS ARTICULOS EN EL CATALOGO
+INCLUYE EL BOTON PARA VER EL DETALLE DE UN PRODUCTO
+INCLUYE EL BOTON PARA AGREGAR EL PRODUCTO AL CARRITO DE COMPRAS
  */
 
 function ArticulosZgs(props) {

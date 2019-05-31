@@ -16,13 +16,14 @@ export class CarritoComponent implements OnInit {
   loading = false;
   error:string;
 
-
+//INICIA LOS SERVICIOS DEL CARRITO Y DE LOS DATOS
   constructor(
     private carShopingService: CarShopingService, 
     private dataService: DataService,
     private router: Router) { }
 
 
+    //CARGA LOS PRODUCTOS DEL CARRITO
     ngOnInit() {
       this.carItems = this.carShopingService.getCarShoping();
       
@@ -33,6 +34,7 @@ export class CarritoComponent implements OnInit {
       console.log('datos de carshoping: ', this.carItems);
     }
   
+    //REALIZA EL PAGO Y LO DESCUENTA DEL STOCK
     pagar(){
       this.loading = true;
       let itemsUp = this.carShopingService.getArticulos();

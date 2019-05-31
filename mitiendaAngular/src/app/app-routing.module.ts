@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+//ACCESO Y USO DE LOS COMPONENTES DE LA APP
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
@@ -10,6 +11,8 @@ import { CarritoComponent } from './components/carrito/carrito.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { DetailComponent } from './components/detail/detail.component';
 
+
+//USO DE LAS RUTAS PARA LA NAVEGACION
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },

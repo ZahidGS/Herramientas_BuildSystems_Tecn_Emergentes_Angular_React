@@ -4,6 +4,7 @@ import fire from '../config/fire';
 
 import { Link } from 'react-router-dom';
 
+//GENERA LA BARRA DE NAVEGACION, LOS ACCESOS Y CERRAR SESION
 
 class Navega extends Component {
     render () {
@@ -18,9 +19,7 @@ class Navega extends Component {
                     <div className="navbar-nav">
                     <Link to ="/catalogo" className="nav-item nav-link" >Catalogo</Link>
                     <Link to ="/carrito" className="nav-item nav-link" >Carrito                
-                    <span className="badge badge-pill badge-danger ml-2">
-                  {  } 0
-                </span></Link>
+                    <span className="badge badge-pill badge-danger ml-2"> 0 </span></Link>
                     <a href="/" onClick={this.logout.bind(this)} className="nav-item nav-link" >Cerrar Sesion</a>
                     </div>
                 </div>

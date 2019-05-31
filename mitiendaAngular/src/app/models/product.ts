@@ -1,3 +1,5 @@
+//MODELO DEL PRODUCTO
+
 export interface ProductInterface {
     nombre?: string;
     img?: string;

@@ -2,6 +2,10 @@ import React, { Fragment } from 'react';
 
 import { Link } from 'react-router-dom';
 
+
+
+//MUESTRA EL ARTICULO SELECCIONADO
+
 function ProductoPage (props) {
 
     const {

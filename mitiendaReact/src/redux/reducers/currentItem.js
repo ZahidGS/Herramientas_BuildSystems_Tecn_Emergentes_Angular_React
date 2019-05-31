@@ -5,6 +5,8 @@ import items from '../../Components/items';
 
 const defaultState = [];
 
+
+//REGRESA AL ESTADO EL PRODUCTO ENCONTRADO
 function reducer(state = defaultState, { type, payload }) {
     switch (type) {
         case findCurrentItemType: {

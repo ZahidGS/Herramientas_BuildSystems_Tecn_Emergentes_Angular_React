@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Carrito extends Component {
-/*     constructor(props) {
-        super(props);
-        const { history } = props;
-    }
+/* 
+MUESTRA LOS PRODUCTOS AGREGADOS EN EL CARRITO
+MUESTRA EL SUBTOTAL Y TOTAL A PAGAR
+INCLUYE EL BOTON PARA COBRAR Y DESCONTAR ARTICULOS VENDIDOS
+
  */
+class Carrito extends Component {
 
     render() {
         return(

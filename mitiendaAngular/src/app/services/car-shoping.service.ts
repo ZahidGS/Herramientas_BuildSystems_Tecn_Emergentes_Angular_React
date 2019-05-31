@@ -8,23 +8,28 @@ export class CarShopingService {
 
   constructor() {}
 
+  //ACTUALIZA ARTICULOS
   setArticulos(articulos){
     this.articulos = articulos;
   }
 
+  //REGRESA LOS ARTICULOS
   getArticulos(){
     return this.articulos;
   }
 
+  //ALMACENA EN CARRITO
   setItem(item){
     this.item = item;
     console.log('elemento a carrito: ', item);
     console.log('contenido del carrito', this.articulos);
   }
 
+  //OBTIENE DATOS DEL CARRITO
   getItem() {
   	return this.item;
   }
+
 
   setCarShoping(){
     do {
@@ -32,6 +37,7 @@ export class CarShopingService {
     } while (this.carShoping.length > 0);
   }
   
+  //AGREGA ARTICULO AL CARRITO Y DESCUENTA LA CANTIDAD DEL STOCK
   agregarItemShoping(cant){
     for (var i = 0; i < this.articulos.length; i++) {
       if(this.articulos[i].id == this.item.id){

@@ -21,6 +21,7 @@ export class DataService {
   
   public selectedProduct: ProductInterface = { id: null };
 
+  //DEVUELVE TODOS LOS PRODUCTOS DE FIREBASE
   getProducts(){
     return this.products = this.productsCollection.snapshotChanges()
      .pipe( map ( changes => {
@@ -32,6 +33,7 @@ export class DataService {
      }));
   }
 
+  //OBTIENE UN PRODUCTO
   getOneProduct(idProduct: string) {
 
     console.log('mi id', idProduct);
@@ -49,22 +51,7 @@ export class DataService {
   }
 
 
-/*   updateProduct(data){
-  	let datos = JSON.stringify(data);
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-  	return this.http.post('./articulos/update', datos, {headers: headers}).pipe(map((response: Response) => response.json()))
-  }
- */
-
-/* 
-  updateProduct(product: ProductInterface): void {
-    let idProduct = product.id;
-    this.productDoc = this.afs.doc<ProductInterface>(`products/${idProduct}`);
-    this.productDoc.update(product);
-  }
-
- */
+//AGREGA UN PRODUCTO 
 
 addProducts(data): void {
   console.log('en data service llega: ', data);

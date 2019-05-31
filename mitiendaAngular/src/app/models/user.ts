@@ -1,3 +1,5 @@
+//MODELO PARA EL USUARIO Y SUS ROLES
+
 export interface Roles {
     editor?: boolean;
     admin?: boolean;

@@ -12,17 +12,7 @@ export class AuthService {
 
   constructor(private afsAuth: AngularFireAuth, private afs: AngularFirestore) { }
 
-/*   registerUser(email: string, pass: string){
-    return new Promise((resolve, reject) => {
-      this.afsAuth.auth.createUserWithEmailAndPassword(email, pass)
-      .then(userData => {
-        resolve(userData),
-        this.updateUserData(userData.user)
-      }).catch(err => console.log(reject(err)))
-    });
-  }
- */
-
+//REGISTRA UN USUARIO NUEVO
 registerUser(email: string, pass: string){
   return new Promise((resolve, reject) => {
     this.afsAuth.auth.createUserWithEmailAndPassword(email, pass)
@@ -31,6 +21,7 @@ registerUser(email: string, pass: string){
   });
 }
 
+//REVISA CREDENCIALES DE USUARIO
   loginEmailUser (email: string, pass: string){
     return new Promise((resolve, reject) => {
       this.afsAuth.auth.signInWithEmailAndPassword(email,pass)
@@ -39,14 +30,17 @@ registerUser(email: string, pass: string){
     })
   }
 
+  //CIERRA SESION
   logoutUser(){
     return this.afsAuth.auth.signOut();
   }
 
+  //VERIFICA SI ESTA ACTIVO EL USUARIO
   isAuth(){
     return this.afsAuth.authState.pipe(map(auth => auth ));
   }
- 
+
+  //ACTUALIZA DATOS DEL USUARIO
   private updateUserData(user){
     const userRef : AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
     const data: UserInterface = {

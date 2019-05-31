@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
   carShoping: any;
   constructor(private carShopingService : CarShopingService) { }
 
+  //CARGA LA CUENTA DE LOS PRODUCTOS EN EL CARRITO
   ngOnInit() {
     this.carShoping = this.carShopingService.getCarShoping();
   }

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Ng2FilterPipeModule } from 'ng2-filter-pipe';
 
+//COMPONENTES DE LA APP
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -24,6 +25,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/firestore';
 
+// CONEXION A MODULOS DE SERVICIOS
 import { CarShopingService } from './services/car-shoping.service';
 import { DataService } from './services/data.service';
 

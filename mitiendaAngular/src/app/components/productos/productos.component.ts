@@ -24,7 +24,7 @@ export class ProductosComponent implements OnInit {
       ) { }
   
 
-
+//CARGA LOS PRODUCTOS Y CUENTA LOS QUE SE ENCUENTRAN EN EL CARRITO
     ngOnInit() {
       this.productos = this.carShopingService.getArticulos();
       if (this.productos.length == 0) {
@@ -37,7 +37,7 @@ export class ProductosComponent implements OnInit {
     }
 
 
-    
+    //AGREGA PRODUCTOS AL CARRITO
     agregarProducto(producto){
       if (!isNaN(this.cantidadAdd)) {
         console.log('del boton añadir', producto, 'cantidad: ', this.cantidadAdd)

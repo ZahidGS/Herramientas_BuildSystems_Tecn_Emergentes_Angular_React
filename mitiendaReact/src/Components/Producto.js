@@ -9,6 +9,8 @@ import { withRouter } from 'react-router-dom';
 
 import findCurrentItem from '../redux/actions/findCurrentItem';
 
+
+//MUESTRA EL DETALLE DE PRODUCTO, SE LE PASAN LOS PARAMETROS QUE VIENEN DE ARTICULO
 class Producto extends Component {
 
     componentDidMount(){
